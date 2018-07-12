@@ -9,8 +9,10 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/tasks")
+@RequestMapping(TaskController.BASE_URL)
 public class TaskController {
+
+    public static final String BASE_URL = "/api/tasks";
 
     private TaskService taskService;
 
